@@ -206,15 +206,13 @@ function devolverPrimerElemento(array) {
     // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
     // Tu código:
     var tabla = [0,1,2,3,4,5,6,7,8,9,10];
-    final = [];
-    for (var i=0; i<tabla.length; i++){
-        final = tabla.push(6*i);
-        return final;
-        //console.log(final);
-    }
- }
- console.log(final);
- 
+    //var final = [];
+    //for (var i=0; i<tabla.length; i++){
+        var final = tabla.map(function(num){
+            return num * 6;
+        }); console.log(final);
+}
+tablaDelSeis();
  
 
  
